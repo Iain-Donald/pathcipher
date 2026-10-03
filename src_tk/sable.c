@@ -1,5 +1,5 @@
 /*
-*** pathcipher.c
+*** sable.c
 *** by Iain Donald
 *** mod 20261002, created 20261002.
 
@@ -11,7 +11,7 @@ The Tk script is embedded below and run by the embedded Tcl interpreter. The Asc
 
 // how to build
 Debian: apt install tcl-dev tk-dev.
-zig cc -std=c99 -O2 -I/usr/include/tcl8.6 pathcipher.c libascon.a -ltcl8.6 -ltk8.6 -o pathcipher
+zig cc -std=c99 -O2 -I/usr/include/tcl8.6 sable.c libascon.a -ltcl8.6 -ltk8.6 -o sable
 */
 
 #include <stdio.h>
@@ -560,7 +560,7 @@ static const char *gui_script =
   "  .nb.about.t insert end $line\n"
   "  .nb.about.t insert end [format %c 10]\n"
   "}\n"
-  "about {// pathcipher // a GUI for ascon-lib.}\n"
+  "about {// sable // a GUI for ascon-lib.}\n"
   "about {}\n"
   "about {Library: ascon-lib, a C implementation of NIST SP 800-232.}\n"
   "about {https://github.com/Iain-Donald/ascon-lib}\n"
