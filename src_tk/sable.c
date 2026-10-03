@@ -541,7 +541,7 @@ static const char *gui_script =
   "  show $w [join [list ciphertext: [lindex $res 0] tag: [lindex $res 1]] \\n]\n"
   "}\n"
   "set w [tab AEAD128]\n"
-  "mfield $w 0 Plaintext {Secret message for Jane Doe.}\n"
+  "mfield $w 0 {Plaintext (not req. for decrypt)} {Secret message for Jane Doe.}\n"
   "field $w 1 {Associated data} {to: Jane}\n"
   "field $w 2 {Key (hex)} 000102030405060708090a0b0c0d0e0f\n"
   "field $w 3 {Nonce (hex)} 101112131415161718191a1b1c1d1e1f\n"
